@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="test@localhost" uuid="5c8fae6f-012c-4a45-bb7f-0fba04fd3c7b">
+      <database-info product="H2" version="1.4.196 (2017-06-10)" jdbc-version="4.0" driver-name="H2 JDBC Driver" driver-version="1.4.196 (2017-06-10)">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>sa</user-name>
+      <introspection-schemas>TEST:</introspection-schemas>
+    </data-source>
+  </component>
+</project>

@@ -1,5 +1,9 @@
 package rest.database;
 
+import org.h2.tools.RunScript;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -12,6 +16,9 @@ import java.util.Queue;
  * Created by Cyril on 16/10/2017.
  */
 public class DatabaseManager {
+
+    private static boolean isScriptStarted = false;
+
     /**
      * The Constant freeConnections.
      */
@@ -26,25 +33,25 @@ public class DatabaseManager {
      * The Constant url.
      */
     //private static final String url = System.getProperty("database.url");
-    private static final String url = "jdbc:h2:tcp://192.168.99.100:1521";
+    private static final String url = "jdbc:h2:tcp://container-database:1521/~/rest";
 
     /**
      * The Constant user.
      */
     //private static final String user = System.getProperty("database.user");
-    private static final String user = "root";
+    private static final String user = "sa";
 
     /**
      * The Constant password.
      */
     //private static final String password = System.getProperty("database.password");
-    private static final String password = "root";
+    private static final String password = "";
 
     /**
      * The Constant schema.
      */
     //private static final String schema = System.getProperty("database.schema");
-    private static final String schema = "rest";
+    private static final String schema = "REST";
 
 
     static {

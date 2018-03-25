@@ -16,7 +16,7 @@ import java.util.logging.Logger;
  */
 public class Main {
     // Base URI the Grizzly HTTP server will listen on
-    public static final String BASE_URI = "http://localhost:8080/";
+    public static final String BASE_URI = "http://container-java:8282/";
 
     /**
      * Starts Grizzly HTTP server exposing JAX-RS resources defined in this application.
@@ -42,8 +42,9 @@ public class Main {
         final HttpServer server = startServer();
         System.out.println(String.format("Jersey app started with WADL available at "
                 + "%sapplication.wadl\nHit enter to stop it...", BASE_URI));
-        System.in.read();
-        server.stop();
+        //System.in.read();
+        //System.out.println("You typed something, server stop will be executed.");
+        //server.stop();
     }
 }
 

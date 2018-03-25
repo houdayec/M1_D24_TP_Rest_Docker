@@ -32,7 +32,7 @@ public class Person implements Serializable, Entity{
         try {
             Connection connection = DatabaseManager.getConnection();
             findAll = connection.prepareStatement("SELECT * FROM REST.PEOPLE");
-            findById = connection.prepareStatement("select * FROM rest.people WHERE id=?");
+            findById = connection.prepareStatement("select * FROM REST.PEOPLE WHERE ID=?");
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -125,6 +125,7 @@ public class Person implements Serializable, Entity{
             Person p;
             if(resultSet.next()){
                 p = new Person(resultSet.getInt("ID"), resultSet.getString("FIRSTNAME"), resultSet.getString("LASTNAME"), resultSet.getString("SURNAME"), resultSet.getInt("AGE"));
+                System.out.println("PERSON FOUND FOR ID : " + id + " " + p.toString());
             }else{
                 throw new PersistanceException("Person " + id + "not found in db");
             }

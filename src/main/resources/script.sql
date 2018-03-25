@@ -1,5 +1,4 @@
-CREATE SCHEMA IF NOT EXISTS rest AUTHORIZATION root;
-
+CREATE SCHEMA IF NOT EXISTS rest;
 DROP TABLE rest.PEOPLE;
 
 CREATE TABLE IF NOT EXISTS rest.PEOPLE (
@@ -9,3 +8,5 @@ CREATE TABLE IF NOT EXISTS rest.PEOPLE (
   surname VARCHAR2(50),
   age INT,
 );
+
+INSERT INTO rest.PEOPLE (1, "corentin", "houdayer", "coco", 21);

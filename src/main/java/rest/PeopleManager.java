@@ -16,38 +16,43 @@ public class PeopleManager {
     private static List<Person> listPeople = new ArrayList<>();
 
     static{
-        /*
+
+
         listPeople.add(PersonController.getInstance().CreatePerson("Corentin", "Houdayer", "Coco", 21));
         listPeople.add(PersonController.getInstance().CreatePerson("Corentin", "Houdayer", "Cocorico", 21));
         listPeople.add(PersonController.getInstance().CreatePerson("Test", "Test", "Cocorico", 23));
-        */
+        try {
+            saveStaticDataInDb();
+        } catch (PersistanceException e) {
+            e.printStackTrace();
+        }
+
     }
 
     @GET
     @Path("people")
     public List<Person> getAllPeople() throws PersistanceException {
         System.out.println(listPeople);
-        //saveStaticDataInDb();
-
+        System.out.println(listPeople.size());
         List<Person> listPeople2 = Person.findAll();
-
+        System.out.println("LIST ALL PEOPLE FROM DB : " + listPeople2.size());
         return listPeople2;
     }
 
     @GET
     @Path("people/{id}")
-    public Person getPersonById(@PathParam("id")int personId) throws PersistanceException {
+    public Response getPersonById(@PathParam("id")int personId) throws PersistanceException {
         System.out.println("Trying to get person " + personId);
         Response rp = null;
         Person p = Person.findById(personId);
         while(p == null){
             System.out.println("null");
         }
-        //rp = Response.status(200).entity(p).build();
+        rp = Response.status(200).entity(p).build();
 
 
 
-        return p;
+        return rp;
     }
 
     @PUT
@@ -76,14 +81,15 @@ public class PeopleManager {
 
     @DELETE
     @Path("delete/{id}")
-    public void deletePerson(@PathParam("id") int personId){
+    public void deletePerson(@PathParam("id") int personId) throws PersistanceException {
         System.out.println("Person with id " + personId + " has been deleted.");
         listPeople.remove(personId);
+        Person p = Person.findById(personId);
         EntityManager entityManager = EntityManager.getInstance();
-        //entityManager.remove();
+        entityManager.remove(p);
     }
 
-    public void saveStaticDataInDb() throws PersistanceException {
+    public static void saveStaticDataInDb() throws PersistanceException {
         for (Person p:listPeople) {
             EntityManager entityManager = EntityManager.getInstance();
             entityManager.persist(p);
