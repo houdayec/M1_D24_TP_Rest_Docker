@@ -1,1 +1,10 @@
 language: java
+script: mvn clean compile assembly:single
+branches:
+  only:
+    - master
+deploy:
+  provider: bintray
+  file: "descriptor.json"
+  user: "houdayec"
+  key: "97ec6c67a31c4c1edecb57e14a0c4869d9281ee3"
