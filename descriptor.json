@@ -53,10 +53,8 @@
     Note: Regular expressions defined as part of the includePattern property must be wrapped with brackets. */
 
     "files":
-        [
-        {
-          "includePattern": "target/(*.jar)", "excludePattern": "target/.*.zip$", "uploadPattern": "/$1"
-        }
-        ],
+    [
+    {"includePattern": "target/(.*)", "excludePattern": "target/.*.zip$", "uploadPattern": "/$1"}
+    ],
     "publish": true
 }
