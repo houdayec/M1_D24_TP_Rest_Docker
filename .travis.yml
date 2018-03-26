@@ -1,5 +1,6 @@
 language: java
 script:
+  - mvn package
   - mvn clean compile assembly:single
   - bash <(curl -s https://codecov.io/bash)
   - git add .
