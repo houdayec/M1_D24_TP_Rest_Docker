@@ -14,7 +14,7 @@
             <repositories>
                 <repository>
                     <snapshots>
-                        <enabled>false</enabled>
+                        <enabled>true</enabled>
                     </snapshots>
                     <id>bintray-houdayec-TP_Rest_Docker_D24</id>
                     <name>bintray</name>
@@ -24,7 +24,7 @@
             <pluginRepositories>
                 <pluginRepository>
                     <snapshots>
-                        <enabled>false</enabled>
+                        <enabled>true</enabled>
                     </snapshots>
                     <id>bintray-houdayec-TP_Rest_Docker_D24</id>
                     <name>bintray-plugins</name>
