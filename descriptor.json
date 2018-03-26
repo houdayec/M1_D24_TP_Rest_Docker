@@ -55,7 +55,7 @@
     "files":
         [
         {
-          "includePattern": "target/MyRestProject-1.0-SNAPSHOT-jar-with-dependencies.jar	", "excludePattern": "target/.*.zip$", "uploadPattern": "/$1"
+          "includePattern": "target/MyRestProject-1.0-SNAPSHOT-jar-with-dependencies.jar", "excludePattern": "target/.*.zip$", "uploadPattern": "/$1"
         }
         ],
     "publish": true
