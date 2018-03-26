@@ -4,6 +4,7 @@ script:
   - bash <(curl -s https://codecov.io/bash)
   - git add .
   - git commit -m "build from travis"
+  - pwd
 #script : mvn deploy
 branches:
   only:
