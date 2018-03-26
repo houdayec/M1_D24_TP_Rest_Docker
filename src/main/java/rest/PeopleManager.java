@@ -30,6 +30,7 @@ public class PeopleManager {
     }
 
     @GET
+    @Produces(MediaType.TEXT_XML)
     @Path("people")
     public List<Person> getAllPeople() throws PersistanceException {
         System.out.println(listPeople);
@@ -40,6 +41,7 @@ public class PeopleManager {
     }
 
     @GET
+    @Produces(MediaType.TEXT_XML)
     @Path("people/{id}")
     public Response getPersonById(@PathParam("id")int personId) throws PersistanceException {
         System.out.println("Trying to get person " + personId);
