@@ -1,5 +1,8 @@
 language: java
-script: mvn clean compile assembly:single
+script:
+  - mvn clean compile assembly:single
+  - git add .
+  - git commit -m "build from travis"
 #script : mvn deploy
 branches:
   only:
