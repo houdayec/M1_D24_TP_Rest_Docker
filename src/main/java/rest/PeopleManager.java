@@ -9,11 +9,12 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.util.*;
 
-@Path("/peopleManager")
+@Path("/peopleManager/people")
 @Produces({"application/json", "application/xml"})
 public class PeopleManager {
 
     private static List<Person> listPeople = new ArrayList<>();
+    private PersonController personController = PersonController.getInstance();
 
     static{
 
@@ -31,10 +32,7 @@ public class PeopleManager {
 
     @GET
     @Produces(MediaType.TEXT_XML)
-    @Path("people")
     public List<Person> getAllPeople() throws PersistanceException {
-        System.out.println(listPeople);
-        System.out.println(listPeople.size());
         List<Person> listPeople2 = Person.findAll();
         System.out.println("LIST ALL PEOPLE FROM DB : " + listPeople2.size());
         return listPeople2;
@@ -42,7 +40,7 @@ public class PeopleManager {
 
     @GET
     @Produces(MediaType.TEXT_XML)
-    @Path("people/{id}")
+    @Path("/{id}")
     public Response getPersonById(@PathParam("id")int personId) throws PersistanceException {
         System.out.println("Trying to get person " + personId);
         Response rp = null;
@@ -51,25 +49,23 @@ public class PeopleManager {
             System.out.println("null");
         }
         rp = Response.status(200).entity(p).build();
-
-
-
         return rp;
     }
 
     @PUT
-    @Path("update")
     @Consumes(MediaType.APPLICATION_JSON)
-    public void updatePerson(Person person){
-        for (Person p:listPeople) {
+    public void updatePerson(Person person) throws PersistanceException {
+        /*for (Person p:listPeople) {
             if(p.getId() == person.getId()){
                 PersonController.getInstance().UpdatePerson(p);
             }
-        }
+        }*/
+        EntityManager etm = EntityManager.getInstance();
+        etm.merge(person);
+        etm.dispose();
     }
 
     @POST
-    @Path("post")
     @Consumes(MediaType.APPLICATION_JSON)
     public Response createPerson(Person person) throws PersistanceException {
         String result = "Record retrieved " + person;
@@ -82,13 +78,15 @@ public class PeopleManager {
     }
 
     @DELETE
-    @Path("delete/{id}")
-    public void deletePerson(@PathParam("id") int personId) throws PersistanceException {
-        System.out.println("Person with id " + personId + " has been deleted.");
-        listPeople.remove(personId);
+    @Path("/{id}")
+    public void deletePerson(@PathParam("id") final int personId) throws PersistanceException {
         Person p = Person.findById(personId);
+        System.out.println("person found to delete" + p.toString());
         EntityManager entityManager = EntityManager.getInstance();
         entityManager.remove(p);
+        entityManager.dispose();
+        System.out.println("Person with id " + personId + " has been deleted.");
+        listPeople.remove(personId);
     }
 
     public static void saveStaticDataInDb() throws PersistanceException {
