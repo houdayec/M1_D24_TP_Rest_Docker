@@ -157,12 +157,24 @@ public class Person implements Serializable, Entity{
 
     @Override
     public void merge(Connection connection) throws PersistanceException {
-
+        try {
+            String query = "UPDATE REST.PEOPLE SET AGE='"+ age +"', FIRSTNAME='"+ firstname +"', LASTNAME='" + lastname +"', SURNAME='" + surname + "' WHERE ID='"+id+"\'";
+            System.out.println(query);
+            connection.createStatement().executeUpdate(query);
+            System.out.println("merge of the person : " + this);
+        } catch (SQLException e) {
+            throw new PersistanceException(e);
+        }
     }
 
     @Override
     public void update(Connection connection) throws PersistanceException {
-
+        Person person = findById(this.id);
+        this.firstname = person.firstname;
+        this.age = person.age;
+        this.lastname = person.lastname;
+        this.surname = person.surname;
+        System.out.println("Update of the person: " + this);
     }
 
 

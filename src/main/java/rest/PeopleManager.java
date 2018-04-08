@@ -60,6 +60,7 @@ public class PeopleManager {
                 PersonController.getInstance().UpdatePerson(p);
             }
         }*/
+        System.out.println("TRYIpNG TO UPDATE !");
         EntityManager etm = EntityManager.getInstance();
         etm.merge(person);
         etm.dispose();
