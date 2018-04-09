@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f0145a7-16e2-4425-9e97-6553e0420e12" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/MyRestProject-1.0-SNAPSHOT-shaded.jar" afterPath="$PROJECT_DIR$/target/MyRestProject-1.0-SNAPSHOT-shaded.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/MyRestProject.jar" afterPath="$PROJECT_DIR$/target/MyRestProject.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/archive-tmp/MyRestProject.jar" afterPath="$PROJECT_DIR$/target/archive-tmp/MyRestProject.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/rest/PeopleManager.class" afterPath="$PROJECT_DIR$/target/classes/rest/PeopleManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/original-MyRestProject.jar" afterPath="$PROJECT_DIR$/target/original-MyRestProject.jar" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DIRTY.travis.yml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/rest/PeopleManager.java" afterPath="$PROJECT_DIR$/src/main/java/rest/PeopleManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/rest/model/Person.java" afterPath="$PROJECT_DIR$/src/main/java/rest/model/Person.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.travis.yml" afterPath="$PROJECT_DIR$/.travis.yml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,7 +57,7 @@
       <file leaf-file-name="EntityManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/rest/model/EntityManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
+            <state relative-caret-position="950">
               <caret line="46" column="16" lean-forward="false" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -74,14 +69,14 @@
       <file leaf-file-name="Person.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/rest/model/Person.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="172" column="31" lean-forward="false" selection-start-line="172" selection-start-column="25" selection-end-line="172" selection-end-column="31" />
+            <state relative-caret-position="475">
+              <caret line="170" column="68" lean-forward="true" selection-start-line="170" selection-start-column="68" selection-end-line="170" selection-end-column="68" />
               <folding>
-                <marker date="1523216451620" expanded="true" signature="880:905" ph="SELECT * FRO... PEOPLE" />
-                <marker date="1523216451620" expanded="true" signature="961:997" ph="select * FRO... people" />
-                <marker date="1523216451620" expanded="true" signature="4127:4260" ph="INSERT INTO rest.people... " />
-                <marker date="1523216451620" expanded="true" signature="4953:5094" ph="UPDATE REST.... " />
-                <marker date="1523216451620" expanded="true" signature="5794:5840" ph="DELETE FROM " />
+                <marker date="1523216526615" expanded="true" signature="880:905" ph="SELECT * FRO... PEOPLE" />
+                <marker date="1523216526615" expanded="true" signature="961:997" ph="select * FRO... people" />
+                <marker date="1523216526615" expanded="true" signature="4127:4260" ph="INSERT INTO rest.people... " />
+                <marker date="1523216526615" expanded="true" signature="4953:5094" ph="UPDATE REST.... " />
+                <marker date="1523216526615" expanded="true" signature="5879:5925" ph="DELETE FROM " />
               </folding>
             </state>
           </provider>
@@ -100,7 +95,7 @@
       <file leaf-file-name="PeopleManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/rest/PeopleManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
+            <state relative-caret-position="1425">
               <caret line="64" column="14" lean-forward="false" selection-start-line="64" selection-start-column="14" selection-end-line="64" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -203,7 +198,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
+    <option name="x" value="274" />
+    <option name="y" value="184" />
     <option name="width" value="980" />
     <option name="height" value="1090" />
   </component>
@@ -222,6 +218,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -304,7 +301,6 @@
       </pane>
       <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -455,12 +451,13 @@
       <workItem from="1523191767342" duration="925000" />
       <workItem from="1523211747291" duration="48000" />
       <workItem from="1523212089593" duration="683000" />
-      <workItem from="1523215170044" duration="1247000" />
+      <workItem from="1523215170044" duration="1413000" />
+      <workItem from="1523257877074" duration="130000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70966000" />
+    <option name="totallyTimeSpent" value="71262000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -481,22 +478,22 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32887402" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19175027" sideWeight="0.2627027" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19175027" sideWeight="0.26864865" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19175027" sideWeight="0.7372973" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19175027" sideWeight="0.7313514" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30054054" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25297296" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22486487" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -557,11 +554,11 @@
         <state relative-caret-position="288">
           <caret line="17" column="20" lean-forward="false" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
           <folding>
-            <marker date="1523216451620" expanded="true" signature="880:905" ph="SELECT * FRO... PEOPLE" />
-            <marker date="1523216451620" expanded="true" signature="961:997" ph="select * FRO... people" />
-            <marker date="1523216451620" expanded="true" signature="4127:4260" ph="INSERT INTO rest.people... " />
-            <marker date="1523216451620" expanded="true" signature="4953:5094" ph="UPDATE REST.... " />
-            <marker date="1523216451620" expanded="true" signature="5794:5840" ph="DELETE FROM " />
+            <marker date="1523216526615" expanded="true" signature="880:905" ph="SELECT * FRO... PEOPLE" />
+            <marker date="1523216526615" expanded="true" signature="961:997" ph="select * FRO... people" />
+            <marker date="1523216526615" expanded="true" signature="4127:4260" ph="INSERT INTO rest.people... " />
+            <marker date="1523216526615" expanded="true" signature="4953:5094" ph="UPDATE REST.... " />
+            <marker date="1523216526615" expanded="true" signature="5879:5925" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
@@ -618,11 +615,11 @@
         <state relative-caret-position="288">
           <caret line="17" column="20" lean-forward="true" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
           <folding>
-            <marker date="1523216451620" expanded="true" signature="880:905" ph="SELECT * FRO... PEOPLE" />
-            <marker date="1523216451620" expanded="true" signature="961:997" ph="select * FRO... people" />
-            <marker date="1523216451620" expanded="true" signature="4127:4260" ph="INSERT INTO rest.people... " />
-            <marker date="1523216451620" expanded="true" signature="4953:5094" ph="UPDATE REST.... " />
-            <marker date="1523216451620" expanded="true" signature="5794:5840" ph="DELETE FROM " />
+            <marker date="1523216526615" expanded="true" signature="880:905" ph="SELECT * FRO... PEOPLE" />
+            <marker date="1523216526615" expanded="true" signature="961:997" ph="select * FRO... people" />
+            <marker date="1523216526615" expanded="true" signature="4127:4260" ph="INSERT INTO rest.people... " />
+            <marker date="1523216526615" expanded="true" signature="4953:5094" ph="UPDATE REST.... " />
+            <marker date="1523216526615" expanded="true" signature="5879:5925" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
@@ -685,11 +682,11 @@
         <state relative-caret-position="126">
           <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
           <folding>
-            <marker date="1523216451620" expanded="true" signature="880:905" ph="SELECT * FRO... PEOPLE" />
-            <marker date="1523216451620" expanded="true" signature="961:997" ph="select * FRO... people" />
-            <marker date="1523216451620" expanded="true" signature="4127:4260" ph="INSERT INTO rest.people... " />
-            <marker date="1523216451620" expanded="true" signature="4953:5094" ph="UPDATE REST.... " />
-            <marker date="1523216451620" expanded="true" signature="5794:5840" ph="DELETE FROM " />
+            <marker date="1523216526615" expanded="true" signature="880:905" ph="SELECT * FRO... PEOPLE" />
+            <marker date="1523216526615" expanded="true" signature="961:997" ph="select * FRO... people" />
+            <marker date="1523216526615" expanded="true" signature="4127:4260" ph="INSERT INTO rest.people... " />
+            <marker date="1523216526615" expanded="true" signature="4953:5094" ph="UPDATE REST.... " />
+            <marker date="1523216526615" expanded="true" signature="5879:5925" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
@@ -830,7 +827,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/rest/PeopleManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
+        <state relative-caret-position="1425">
           <caret line="64" column="14" lean-forward="false" selection-start-line="64" selection-start-column="14" selection-end-line="64" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -840,7 +837,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/rest/model/EntityManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
+        <state relative-caret-position="950">
           <caret line="46" column="16" lean-forward="false" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -850,14 +847,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/rest/model/Person.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="172" column="31" lean-forward="false" selection-start-line="172" selection-start-column="25" selection-end-line="172" selection-end-column="31" />
+        <state relative-caret-position="475">
+          <caret line="170" column="68" lean-forward="true" selection-start-line="170" selection-start-column="68" selection-end-line="170" selection-end-column="68" />
           <folding>
-            <marker date="1523216451620" expanded="true" signature="880:905" ph="SELECT * FRO... PEOPLE" />
-            <marker date="1523216451620" expanded="true" signature="961:997" ph="select * FRO... people" />
-            <marker date="1523216451620" expanded="true" signature="4127:4260" ph="INSERT INTO rest.people... " />
-            <marker date="1523216451620" expanded="true" signature="4953:5094" ph="UPDATE REST.... " />
-            <marker date="1523216451620" expanded="true" signature="5794:5840" ph="DELETE FROM " />
+            <marker date="1523216526615" expanded="true" signature="880:905" ph="SELECT * FRO... PEOPLE" />
+            <marker date="1523216526615" expanded="true" signature="961:997" ph="select * FRO... people" />
+            <marker date="1523216526615" expanded="true" signature="4127:4260" ph="INSERT INTO rest.people... " />
+            <marker date="1523216526615" expanded="true" signature="4953:5094" ph="UPDATE REST.... " />
+            <marker date="1523216526615" expanded="true" signature="5879:5925" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
